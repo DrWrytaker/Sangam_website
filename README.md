@@ -1,7 +1,9 @@
 # Sangam Interactive Showcase & Code Learning Platform
 
+🔗 **Live Web Showcase**: [https://learnsangam.netlify.app/](https://learnsangam.netlify.app/)  
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/DrWrytaker/Sangam_website)
 
+> **Live Demo**: [https://learnsangam.netlify.app/](https://learnsangam.netlify.app/)  
 > **Tech Stack**: React 18 · Three.js · Vite · Tailwind CSS · Lucide Icons · Canvas Confetti · Vitest  
 > **Status**: Production-Grade Hardened · 100% Verified · Zero Lint Warnings  
 > **Deploy Target**: Netlify / Vercel / Cloudflare Pages
