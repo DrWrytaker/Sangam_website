@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sangam-ledger.web.app/sitemap.xml

@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Rozha+One&display=swap');
+
+:root {
+  --teal-primary: #006D77;
+  --teal-dark: #004E56;
+  --teal-light: #E0F3F5;
+  --teal-glow: rgba(0, 109, 119, 0.25);
+  
+  --coral-accent: #E29578;
+  --coral-light: #FFF0EB;
+  --coral-dark: #C45C12;
+  
+  --sand-bg: #F4F7F6;
+  --sand-card: #FFFFFF;
+  --sand-border: #DDE7E8;
+  --sand-border-light: #EEF4F5;
+
+  --text-dark: #122326;
+  --text-muted: #4A6367;
+  --text-dim: #849E A2;
+  
+  --gpay-blue: #1A73E8;
+  --phonepe-purple: #5F259F;
+  --paytm-navy: #002970;
+  --cash-green: #059669;
+  --udhar-red: #E11D48;
+  
+  --shadow-sm: 0 2px 8px rgba(18, 35, 38, 0.04);
+  --shadow-md: 0 8px 24px rgba(18, 35, 38, 0.08);
+  --shadow-lg: 0 16px 40px rgba(0, 109, 119, 0.12);
+  --shadow-xl: 0 24px 60px rgba(0, 109, 119, 0.18);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--sand-bg);
+  color: var(--text-dark);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+code, pre {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #EAF2F3;
+}
+::-webkit-scrollbar-thumb {
+  background: #B4CDD0;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--teal-primary);
+}
+
+/* Glassmorphism helpers */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.glass-teal {
+  background: rgba(0, 109, 119, 0.06);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(0, 109, 119, 0.15);
+}
+
+/* Gradients */
+.gradient-teal {
+  background: linear-gradient(135deg, #008B96 0%, #006D77 50%, #004E56 100%);
+}
+
+.gradient-coral {
+  background: linear-gradient(135deg, #FFB499 0%, #E29578 100%);
+}
+
+.gradient-mesh {
+  background: radial-gradient(circle at 10% 10%, rgba(0, 109, 119, 0.08) 0%, transparent 40%),
+              radial-gradient(circle at 90% 80%, rgba(226, 149, 120, 0.12) 0%, transparent 50%),
+              radial-gradient(circle at 50% 50%, rgba(224, 243, 245, 0.4) 0%, transparent 70%);
+}
+
+/* Button & Card Micro-Interactions */
+.interactive-card {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.interactive-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.badge-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+/* Animations */
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(1deg); }
+}
+
+.animate-float {
+  animation: floatSlow 5s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.05); }
+}
+
+.animate-glow {
+  animation: pulseGlow 4s ease-in-out infinite;
+}

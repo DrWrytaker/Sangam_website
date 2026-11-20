@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/images/app_logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#006D77" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Sangam (सबका एक हिसाब) — Unified Kirana Ledger & Architecture Deep-Dive</title>
+    <meta name="title" content="Sangam (सबका एक हिसाब) — Unified Kirana Ledger & Architecture Deep-Dive" />
+    <meta name="description" content="A full-stack, offline-first kirana ledger with automated UPI reconciliation, itemized billing, stock tracking, and rule-based multi-user security." />
+    <meta name="keywords" content="Kirana ledger, OkCredit, Khatabook, UPI notification capture, Flutter, Firebase, Riverpod, FinTech India" />
+    <meta name="author" content="Sangam Team" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sangam-ledger.web.app/" />
+    <meta property="og:title" content="Sangam (सबका एक हिसाब) — Unified Kirana Ledger" />
+    <meta property="og:description" content="Automated zero-touch UPI capture for PhonePe, GPay, and Paytm, itemized bills, and team permissions on Flutter & Firebase." />
+    <meta property="og:image" content="/images/app_logo.png" />
+
+    <!-- Twitter Card -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://sangam-ledger.web.app/" />
+    <meta property="twitter:title" content="Sangam (सबका एक हिसाब) — Unified Kirana Ledger" />
+    <meta property="twitter:description" content="Automated zero-touch UPI capture for PhonePe, GPay, and Paytm, itemized bills, and team permissions on Flutter & Firebase." />
+    <meta property="twitter:image" content="/images/app_logo.png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CDN with Custom Config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              teal: {
+                primary: '#006D77',
+                dark: '#004E56',
+                light: '#E0F3F5',
+              },
+              coral: {
+                accent: '#E29578',
+                light: '#FFF0EB',
+              }
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
