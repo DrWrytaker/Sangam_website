@@ -1,9 +1,23 @@
-# Sangam Interactive Showcase & Code Learning Platform (showcase-app)
+# Sangam Interactive Showcase & Code Learning Platform
 
-> **Sub-project**: `showcase-app/`  
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/DrWrytaker/Sangam_website)
+
 > **Tech Stack**: React 18 · Three.js · Vite · Tailwind CSS · Lucide Icons · Canvas Confetti · Vitest  
 > **Status**: Production-Grade Hardened · 100% Verified · Zero Lint Warnings  
-> **Live Local URL**: `http://localhost:5173/`
+> **Deploy Target**: Netlify / Vercel / Cloudflare Pages
+
+---
+
+## ⚡ 1-Click Netlify Deployment
+
+This repository is pre-configured with `netlify.toml` and `public/_redirects`:
+- **Build command**: `npm run build`
+- **Publish directory**: `dist`
+- **Node Version**: `20`
+- **SPA Routing**: Automatic catch-all redirect to `/index.html`
+- **Asset Caching**: Immutable 1-year cache headers for `/assets/`, 7-day stale-while-revalidate for `/media/` and `/images/`
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/DrWrytaker/Sangam_website)
 
 ---
 
